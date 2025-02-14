@@ -18,7 +18,6 @@ import java.util.Arrays;
 @EnableWebSecurity
 public class SecurityConfig {
 
-
     @Value("${cors.allowed-origins:*}")
     private String allowedOrigins;
 
@@ -45,7 +44,6 @@ public class SecurityConfig {
                         .jwt(jwt -> jwt.jwtAuthenticationConverter(jwtAuthenticationConverter())));
         http.csrf(AbstractHttpConfigurer::disable);
         return http.build();
-
 
     }
 

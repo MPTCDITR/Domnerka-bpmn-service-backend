@@ -34,5 +34,4 @@ public class BPMNProcessDto {
     @NotNull(message = "is featured is required!")
     private Boolean isFeatured;
 
-    private String categoryId;
 }
